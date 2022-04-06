@@ -1,0 +1,25 @@
+<%= form_with(model: @product) do |form| %>
+ <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+    <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_field :description %>
+  </div>
+    <div>
+    <%= form.label :price, style: "display: block" %>
+    <%= form.text_field :price %>
+  </div>
+  <%# <div>
+  <% if cart.avatar.attached? %>
+  <%# <%= image_tag cart.avatar, style: "width:300px; display:block"%> %>
+  <%# <%end%> %>
+    <%# <%= form.label :avatar %> %>
+    <%# <%= form.file_field :avatar %> %>
+  <%# </div> %> 
+  <div>
+    <%= form.submit %>
+    <%# <%= render "form", cart: @cart %> %>
+  </div>
+<% end %>
